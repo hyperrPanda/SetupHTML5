@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Job apply Page" />
+  <meta name="keywords" content="HTML5, Job Applcation" />
+  <meta name="author" content="Student"  />
+   <link href="styles/styles.css" rel="stylesheet" />
+  <title>ApplyJobs@Profound Technologies</title>
+
+</head>
+
+<body>
+    <div class="homesite">
+  <header>
+    <div id="applypage">
+    <h1>Apply For Job</h1>
+    <h2>֎Skype Interview Avialable!</h2>
+  </div>
+    <nav class="navmenu">
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="apply.html" class="current">Apply</a>
+        <a href="about.html">About Us</a>
+        <a href="mailto:102019464@student.swin.edu.au">Contact Developer</a>
+     </nav>
+
+  </header>
+<div class="pagecontent">
+   <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+   	<!--Form data -->
+
+   	<p><label for="jnumber">Job reference number</label>
+   		<input type="text" name= "jnumber" id="jnumber" pattern="[A-Za-z0-9]{5}" required="required"  />
+   	</p>
+
+
+    <p><label for="fname">First Name</label>
+      <input type="text" name= "fname" id="fname" pattern="[A-Za-z0-9]{1,20}" required="required"/>
+    </p>
+
+
+    <p><label for="lname">Last Name</label>
+      <input type="text" name= "lname" id="lname" pattern="[A-Za-z0-9]{1,20}" required="required"/>
+    </p>
+
+
+    <p><label for="jnumber">Date of birth</label>
+      <input type="text" name= "dob" id="dob" placeholder="dd/mm/yyyy" pattern="\d{1,2}\/\d{1,2}\/\d{4}" required="required" />
+
+    </p>
+
+
+<div id="buttons">
+   <fieldset>
+<legend>Gender</legend>
+<p><label for="male">Male</label>
+				<input type="radio" id="male" name="gender" value="1" required="required" checked="checked"/>
+				<label for="female">Female</label>
+				<input type="radio" id="female" name="gender" value="2" required="required" />
+
+			</p>
+
+   </fieldset>
+
+
+     <p><label for="address">Street Address</label>
+      <input type="text" name= "address" id="address" pattern="[A-Za-z0-9]{1,40}" required="required"/>
+    </p>
+
+    <p><label for="town">Suburb/Town</label>
+	<input type="text" name= "town" id="town" pattern="[A-Za-z0-9]{1,40}" required="required"/>
+    </p>
+
+   		<p><label for="state">State</label>
+			<select name="state" id="state" required="required">
+				<option value="">Please select</option>
+				<option value="2">VIC</option>
+				<option value="3">NSW</option>
+				<option value="4">QLD</option>
+				<option value="5">NT</option>
+				<option value="6">WA</option>
+				<option value="7">SA</option>
+				<option value="8">TAS</option>
+				<option value="9">ACT</option>
+
+<!--one state value necessary -->
+			</select>
+		</p>
+
+
+   <p><label for="pcode">Post Code</label>
+      <input type="text" name= "pcode" id="pcode"  pattern="[0-9]{4}"  required="required"/>
+    </p>
+
+
+   <p><label for="email">Email Address</label>
+      <input type="text" name= "email" id="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="required"/>
+    </p>
+
+
+    <p><label for="pnumber">Phone Number</label>
+      <input type="text" name= "pnumber" id="pnumber" pattern="[0-9 ]{8,12}" required="required"/>
+    </p>
+
+
+   <fieldset>
+   <legend>Skills</legend>
+
+<p><label for="ht">HTML</label>
+				<input type="checkbox" id="ht" name="category[]" value="ht" checked="checked"/>
+				<label for="cs">CSS</label>
+				<input type="checkbox" id="cs" name="category[]" value="cs" />
+				<label for="jv">Javascript</label>
+				<input type="checkbox" id="jv" name="category[]" value="jv" />
+				<label for="ph">PHP</label>
+				<input type="checkbox" id="ph" name="category[]" value="ph" />
+				<label for="my">MySQL</label>
+				<input type="checkbox" id="my" name="category[]" value="my" />
+			</p>
+
+   </fieldset>
+<!-- align center -->
+<p>	<input type= "submit" value="Apply" /> <input type= "reset" value="Reset Form" /></p>
+</div>
+  </form>
+  </div>
+  <footer>
+    <p>© Profound Technologies Private limited  2019</p>
+  </footer>
+</div>
+</body>
+
+</html>

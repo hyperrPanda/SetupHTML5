@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Enhancements for Assignment" />
+  <meta name="keywords" content="HTML5, tags" />
+  <meta name="author" content="A Lecturer"  />
+  <link href="styles/styles.css" rel="stylesheet" />
+  <title>Enhancements Description</title>
+
+</head>
+<!-- This is a comment. Indenting child elements makes the markup much more readable -->
+<body>
+   <header>
+     <h1>Enhancements with Description</h1>
+
+   </header>
+<ol class="enlist">
+<li ><h2>Vertical SideBar Embedded with links</h2>
+  <ul>
+    <li>Apart from the essential requirement i have implemented a vertical side bar<strong> which flows with the page scroll.</strong> The remaining page width is adjusted accordingly. This menu is applied everywhere on my website.The navigation menu also highlghts the page wehere user currently is. Hope you like it<br></li>
+    <li><strong> Code</strong>  - .homesite {
+      margin: 0 auto;
+      max-width: 1600px;
+      position: relative;
+
+    }<br>
+    .homesite:before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 15%;
+      display: block;
+      background: #DDDDDD;
+    }
+<br>
+    .pagecontent {
+      position: relative;
+      margin-left: 240px;
+
+    }.navmenu {
+      position: fixed;
+
+      display: block;
+      background: #DDDDDD;
+      top: 120px;
+      bottom: 0;
+      left: 0;
+      z-index: 100;
+    }<br>
+    .navmenu a:hover {
+      background-color: #AAAAAA;
+    }<br>
+    .navmenu a {
+        text-decoration: none; /* Remove the underline */
+        background-color: #DDDDDD;
+        display: block; /* Appear below each other */
+        color: black;
+      padding: 10px;
+
+    }
+
+
+    .navmenu a.current {
+      background-color: #AAAAAA;
+      color: black;
+    }<br>
+</li>
+    <li><a href="https://codepen.io/adriangyuricska/full/bNXaBj/">Technique Idea</a></li>
+    <li><a href="index.html">Applied Here</a></li>
+    </ul></li>
+<li ><h2>Animation using CSS</h2>
+<ul>
+  <li>I have also implemented custom animation using Keyframes, since we are not allowed to use js i used Css for animation. I am animating homepage images, both of the image have different dimension and animate duration</li>
+  <li><strong> Code -</strong><br>.pageimage
+  {
+    height: 250px;
+    width: 380px;
+
+    margin: 20px;
+    clip-path: polygon(
+      0% 0%, 101% 0%,
+      101% 77%,
+      75% 75%, 74% 100%,
+      51% 75%,
+      0% 76%
+    );
+    animation: custom1 8s infinite;
+
+  }
+<br>
+
+  @keyframes custom1 {
+    from {
+      clip-path: polygon(50% 51%,
+        50% 50%, 52% 50%, 50% 50%, 51% 50%, 50% 51%, 52% 50%);
+    }
+  }
+
+<br>
+
+  .pageimage2
+  {
+    height: 250px;
+    width: 380px;
+
+    margin: 15px;
+     clip-path: polygon(
+       0% 21%, 40% 20%, 42% 0%,
+       100% 51%,
+       41% 100%,
+       40% 80%,
+       0% 81%
+     );
+     animation: custom2 5s infinite;
+
+  }
+
+<br>
+  @keyframes  custom2 {
+    from {
+      clip-path: polygon(0% 51%,
+        0% 52%, 0% 50%, 0% 51%, 0% 51%,
+        50% 0%, 52% 0%);
+    }
+  }
+
+</li>
+  <li><a href="https://codepen.io/GeorgePorgee/pen/ervdzq">Technique Idea</a></li>
+  <li><a href="index.html">Applied Here</a></li>
+</ul></li>
+</ol>
+
+</body>
+
+</html>
